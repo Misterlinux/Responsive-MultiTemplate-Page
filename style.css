@@ -1,0 +1,253 @@
+html,body,div,form,fieldset,h1,h2,h3,h4,h5,h6,p,blockquote,pre,li,ul,ol
+{
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0 ;
+    padding: 0;
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+    background: transparent;
+
+    list-style: none;
+}
+table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+th,
+td
+{
+    text-align: left;
+    vertical-align: top;
+}
+img
+{
+    border: 0;
+}
+
+
+/**/
+
+a.nav-link, a.navbar-brand{
+    color: black;
+}
+
+ul.pure-menu-children{
+    left: 10px;
+    top: 40px;
+}
+
+/*-----------------------*/
+
+.btn:hover{
+    text-decoration: underline;
+}
+
+.btn-danger:hover{
+    text-decoration: underline;
+}
+
+button.btn-sm{
+    font-size: 70%;
+    padding: 0.2em 0.65em;
+}
+/*------------------*/
+
+/*this 100% should work only when SMALL SCREEN, with heght*/
+/*so, if we want the collapse content to be visible Wth the navbar we just use auto for responsive*/
+#nav{
+    background-color: orange;
+    height: auto;
+    width: 100%;
+}
+
+/*this is the scrollable image on mobile*/
+/*we need just the fixed position to have the scrolable effect*/
+/*SO, the height of the spash is given by the difference of the #main*/
+.splash-container {
+    background: url("https://live.staticflickr.com/65535/52148924164_6c7a2d74af_m.jpg");
+    height: 54%;
+    /*margin-top: 62px;*/
+    position: fixed !important;
+    /*position fixed it needs position & width*/
+}
+
+/*if we dont use z-index the space is given by top */
+/*this is for the srollable-image content, width and heigth is the content space in the image*/
+/*the image overlay content needs width/height to avoid spread, position absolute allows us to move the 
+content, for absolute we neeed left/rigth 0 to center it ven more*/
+.splash {
+    width: 55%;
+    margin: auto;
+    position: absolute;
+    top: 100px;
+    left: 0; 
+    right: 0;
+}
+
+/*"button on the overlay*/
+.splash-head {
+    border: 3px solid white;
+}
+
+/*so, the scrollable needs other tags to be absolute*/
+#main{
+    position: absolute;
+    top: 46%;
+}
+
+/*for the shadow we first need each image to be relative */
+.image{
+    position: relative;
+}
+
+/*we need width in acse images are smaller to stretach more space*/
+.image img{
+    width: 100%;
+}
+
+/*position absolute needs bottom for position for each single image allows us to cut trought an image without giving extra space*/
+/*width 100% is for each image,  and we just need bottom position, text-align will set to the right*/
+.image aside {
+    position: absolute;
+    bottom: 0;
+
+    padding: 0.5em 0.5em;
+    color: white;
+    width: 100%;
+    font-size: 80%;
+    text-align: right;
+
+/*the shadow can be done with abackground, the top(white) from the black 90% down*/
+    background: -webkit-linear-gradient(top,#ffffff00 0%,rgba(12,2,2,0.7) 100%);
+}
+
+/*to handle bigger and smaller images at the same we just set height to each image*/
+#main .riga{
+    height: 150px;
+}
+
+.texto{
+    color: orange;
+    background-color: black;
+}
+
+/*fixed needs position*/
+.footer {
+    color: orange;
+    font-size: 70%;
+    bottom: 0;
+    position: fixed;
+}
+
+@media (min-width: 568px) {
+
+    /*for average screens we put height 100% and give it limited width*/
+    #nav {
+        width: 13.5em;
+        height: 100%;
+    }
+
+    .sidebar{
+        margin-top: 10em;
+    }
+
+    .sideform{
+        width: 70%;
+        margin: auto;
+    }
+
+    button.bordato{
+        border: solid 3px rgb(113, 200, 250);
+    }
+    
+    button.bordato:hover{
+        border: solid 3px rgba(173, 216, 230, 0.6);
+    }
+    
+    /*fixed position makes their width/height fixed and overflow is for scrollable */
+        #nav, #list {
+            position: fixed;
+            overflow: auto;
+        }
+    
+    /*LIST IS gonna be margin-left the NAV width*, width just has to be more than avaiable space*/
+        #list {
+            margin-left: 13.5em;
+            height: 33%; 
+            width: 80%;
+            border-bottom: 1px solid #ddd;
+        }
+    
+        .email-item-selected {
+            background: #eee;
+        }
+
+        .email-author:hover{
+            color: #999;
+        }
+
+        .email-author{
+            color: black;
+        }
+
+        .email-name {
+            text-transform: uppercase;
+            color: #999;
+        }
+
+        .email-desc {
+            font-size: 80%;
+            margin: 0.4em 0;
+        }
+
+    .email-subject{
+        font-size: 90%;
+    }
+
+    /*The image fixed position can work ONLY IF the rest of the page is in positing abolute too */
+    /*its position TOP of heigth #list, rigth and button its just to streatch the cntent*/
+        #main {
+            position: fixed;
+            top: 33%;
+            right: 0;
+            bottom: 0; 
+            left: 13.5em;
+            overflow: auto;
+            width: auto;
+    
+        }
+
+    /*this is the text content of the third content, mostly the buttons, the rest is main*/
+    .email-content-controls {
+        margin-top: 2em;
+        text-align: right;
+    }
+
+    .email-content-controls .btn:hover{
+        color: blueviolet;
+        text-decoration: none;
+    }
+
+}
+
+
+@media (min-width: 960px) {
+
+/*at largest screens we, just vive list as a column*/
+    #list {
+        width: 22em;
+        height: 100%;
+        border-right: 1px solid #ddd;
+        overflow: scroll;
+    }
+
+/*static position and margin from nav and list*/
+    #main {
+        position: static;
+        margin-left: 35.5em;
+    }
+
+}

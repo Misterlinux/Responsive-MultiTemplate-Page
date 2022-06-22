@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/331132e12f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<div class="pure-g">
+
+    <div id="nav" class="pure-u-1 pure-menu-fixed">
+
+        <!--this is the large sidebar -->
+            <div class="d-none d-sm-block sidebar text-center">
+
+                <h2>Menu</h2>
+
+                <div class="pure-menu">
+                    <ul class="pure-menu-list">
+                        <li class="pure-menu-item">
+                            <a href="" class="pure-menu-link">Lorem.</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="" class="pure-menu-link">Nostrum!</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="" class="pure-menu-link">Incidunt!</a>
+                        </li>
+                        <li class="pure-menu-item ">
+                            <form class="pure-form d-flex text-center">
+                                <!--the form needs directly margin and width-->
+                                <input type="text" class="pure-input sideform" placeholder="search">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="bordato btn mt-2 p-2">Compose</button>  
+            </div>
+
+<!--OK SO, the position in which the collapse toggle will appear will depend on the HTML position-->
+            <nav class="navbar d-flex d-sm-none">
+                <div>
+                    <a href="" class="navbar-brand ps-3">Loremi.</a>
+                </div>
+                                 
+                <div class="d-block d-sm-none">
+                    <button class="navbar-toggle btn btn-warning" data-bs-toggle="collapse" data-bs-target="#tuo">
+                        <span class="navbar-toggler-icon fa-solid fa-bars mt-2"></span>
+                    </button>
+                </div>
+
+                <div class="navbar-collapse collapse text-dark" id="tuo">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item"><a href="" class="nav-link"> COSETTE </a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Ipsam?</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Quo.</a></li>
+                        <li class=" mx-auto ">
+                            <form class="pure-form d-flex">
+                                <input type="text" class="pure-input" placeholder="search">
+                                <button class="pure-button" style="max-height: 42px;">try </button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>  
+            </nav>
+
+    </div>
+
+
+      <div id="list" class="pure-u-1">
+
+        <div class="splash-container d-block d-sm-none w-100">
+            <div class="splash text-center text-dark">
+                <h1 class="splash-head py-2">Big Bold Text</h1>
+                <p class="mb-1">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <a href="http://purecss.io" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+
+<!--This is the middle level scroll messages design-->
+        <div class="d-none d-sm-block ">
+
+            <div class="px-3 py-2 border-bottom border-warning email-item-selected pure-g">
+                <div class="pure-u">
+                    <img width="64" height="64" alt="Tilo Mitra&#x27;s avatar" class="me-2" src="https://bit.ly/3LkXD5I">
+                </div>
+    
+                <div class="pure-u-3-4">
+                    <h6 class="email-name mb-0"> Hello from Toronto </h6>
+                    <p class="email-subject mb-0"> Article by <a href="" class="email-author">Minimister </a> about 
+                        <button class="btn btn-success btn-sm text-sm"> CSS </button> & 
+                        <button class="brn btn-danger btn-sm"> Js </button>
+                    </p>
+                    <p class="email-desc">
+                        Hey, I just wanted to check in with you from Toronto. I got here earlier today.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="px-3 py-2 border-bottom border-warning pure-g">
+                <div class="pure-u">
+                    <img width="64" height="64" alt="Reid Burke&#x27;s avatar" class="me-2" src="https://bit.ly/3LkXD5I">
+                </div>
+    
+                <div class="pure-u-3-4">
+                    <h5 class="email-name mb-0">Reid Burke</h5>
+                    <p class="email-subject mb-0">Hello from Toronto</p>
+                    <p class="email-desc">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa.
+                    </p>
+                </div>
+            </div>
+            <div class="px-3 py-2 border-bottom border-warning pure-g">
+                <div class="pure-u">
+                    <img width="64" height="64" alt="Reid Burke&#x27;s avatar" class="me-2" src="https://bit.ly/3LkXD5I">
+                </div>
+    
+                <div class="pure-u-3-4">
+                    <h6 class="email-name mb-0">Tilo Mitra</h6>
+                    <p class="email-subject mb-0">Hello from Toronto</p>
+                    <p class="email-desc">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa.
+                    </p>
+                </div>
+            </div>
+            <div class="px-3 py-2 border-bottom border-warning pure-g">
+                <div class="pure-u">
+                    <img width="64" height="64" alt="Reid Burke&#x27;s avatar" class="me-2" src="https://bit.ly/3LkXD5I">
+                </div>
+    
+                <div class="pure-u-3-4">
+                    <h6 class="email-name mb-0">Tilo Mitra</h6>
+                    <p class="email-subject mb-0">Hello from Toronto</p>
+                    <p class="email-desc">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa.
+                    </p>
+                </div>
+            </div>
+            <div class="px-3 py-2 border-bottom border-warning pure-g">
+                <div class="pure-u">
+                    <img width="64" height="64" alt="Reid Burke&#x27;s avatar" class="me-2" src="https://bit.ly/3LkXD5I">
+                </div>
+    
+                <div class="pure-u-3-4">
+                    <h6 class="email-name mb-0">Tilo Mitra</h6>
+                    <p class="email-subject mb-0">Hello from Toronto</p>
+                    <p class="email-desc">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa.
+                    </p>
+                </div>
+            </div>
+            <div class="px-3 py-2 border-bottom border-warning pure-g">
+                <div class="pure-u">
+                    <img width="64" height="64" alt="Reid Burke&#x27;s avatar" class="me-2" src="https://bit.ly/3LkXD5I">
+                </div>
+    
+                <div class="pure-u-3-4">
+                    <h6 class="email-name mb-0">Tilo Mitra</h6>
+                    <p class="email-subject mb-0">Hello from Toronto</p>
+                    <p class="email-desc">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+      </div>
+      
+
+    <div id="main" class="pure-u-1 ">
+
+        <div class="pure-g d-block d-sm-none">
+
+<!-- so, in case img-fluid isnt enought for cotrolled heigth of images we ned to use the class in the zimg tag-->
+            <div class="image pure-u-1-3">
+                <a href="">
+                  <img class="pure-img riga" src="https://24.media.tumblr.com/d6b9403c704c3e5aa1725c106e8a9430/tumblr_mvyxd9PUpZ1st5lhmo1_1280.jpg">
+                </a>
+          
+                <aside>
+                  <span>by
+                    <a href="http://www.dillonmcintosh.tumblr.com/"
+                      >Dillon McIntosh</a
+                    ></span>
+                </aside>
+            </div>
+    
+            <div class="texto pure-u-2-3 p-3 riga">
+                <h4>This is the odd space </h4>
+                <p>
+                    A collection of beautiful photos gathered from Unsplash.com.
+                </p>
+            </div>
+        
+            <!-- to have an absolute BUT REPEATED trougth many images we need FIRST A position relative > absolute-->
+            <div class="image pure-u-1-3">
+                <a href="">
+                <img src="https://24.media.tumblr.com/d6b9403c704c3e5aa1725c106e8a9430/tumblr_mvyxd9PUpZ1st5lhmo1_1280.jpg" alt="" 
+                class="pure-img riga">
+                </a>
+                <aside>
+                    <span>By
+                    <a href="">Lorem, ipsum.</a>
+                    </span>
+                </aside>
+            </div>
+
+            <div class="image pure-u-1-3 ">
+                <a href="">
+                <img src="https://bit.ly/3yRfnmm" alt="" class="pure-img riga">
+                </a>
+                <aside><span>By
+                <a href="">Lorem, ipsum.</a>
+                </span></aside>
+            </div>
+
+            <div class="image pure-u-1-3">
+                <a href="">
+                <img src="https://24.media.tumblr.com/d6b9403c704c3e5aa1725c106e8a9430/tumblr_mvyxd9PUpZ1st5lhmo1_1280.jpg" alt="" 
+                    class="pure-img riga">
+                </a>
+                <aside><span>By
+                <a href="">Lorem, ipsum.</a>
+                </span></aside>
+            </div>
+
+            <div class="image pure-u-2-3">
+                <a href="">
+                  <img src="https://bit.ly/3yRfnmm" alt="" class="pure-img riga">
+                </a>
+                <aside><span>By
+                  <a href="">Lorem, ipsum.</a>
+                </span></aside>
+              </div>
+          
+              <div class="image pure-u-1-3 ">
+                <a href="">
+                  <img src="https://bit.ly/3yRfnmm" alt="" class="pure-img riga">
+                </a>
+                <aside><span>By
+                  <a href="">Lorem, ipsum.</a>
+                </span></aside>
+              </div>
+
+              <div class="pure-u-1 text-center p-2 mb-5 ">
+                <h2>Submit a Photo</h2>
+          
+                <!--Normally pure-form is horizontal inline
+                we use pure-form-stacked for the vertical-->
+                <form class="pure-form pure-u-1-2">
+                  <input type="text" placeholder="Photo URL" required />
+                  <input type="text" placeholder="Email" />
+                  <button type="submit" class="pure-button">Submit</button>
+                </form>
+              </div>
+
+              <div class="footer text-center bg-dark p-2 w-100">
+                <div class="pure-u-1">
+                    View the source of this layout to learn more. Made with love by the Pure
+                    Team.
+                </div>
+              </div>
+        </div>
+
+        <div class="d-none d-sm-block">
+            <div class="py-2 px-4 pure-g">
+                <div class="pure-u-1-2">
+                    <h1 class="mt-3 mb-0">Hello from Toronto</h1>
+                    <p>
+                        From <a>Tilo Mitra</a> at <span>3:56pm, April 3, 2021</span>
+                    </p>
+                </div>
+
+                <div class="email-content-controls pure-u-1-2">
+                    <button class="btn btn-warning">Reply</button>
+                    <button class="btn btn-warning">Forward</button>
+                </div>
+            </div>
+
+            <div class="py-2 px-4">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat.
+                </p>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                    Aliquam ac feugiat dolor. Proin mattis massa sit amet enim iaculis tincidunt. Mauris tempor mi vitae sem aliquet
+                    pharetra. Fusce in dui purus, nec malesuada mauris. Curabitur ornare arcu quis mi blandit laoreet. Vivamus imperdiet
+                    fermentum mauris, ac posuere urna tempor at. Duis pellentesque justo ac sapien aliquet egestas. Morbi enim mi, porta
+                    eget ullamcorper at, pharetra id lorem.
+                </p>
+                <p>
+                    Donec sagittis dolor ut quam pharetra pretium varius in nibh. Suspendisse potenti. Donec imperdiet, velit vel
+                    adipiscing bibendum, leo eros tristique augue, eu rutrum lacus sapien vel quam. Nam orci arcu, luctus quis
+                    vestibulum ut, ullamcorper ut enim. Morbi semper erat quis orci aliquet condimentum. Nam interdum mauris sed massa
+                    dignissim rhoncus.
+                </p>
+                <p>
+                    Regards,<br>
+                    Tilo
+                </p>
+            </div>
+        </div>
+
+    </div>
+    
+</div>
+
+
+</body>
+</html>
